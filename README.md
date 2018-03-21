@@ -1,32 +1,32 @@
 # Project Title
 
-$B;(B?$b$N4IM}>l=j(B
+雑多もの管理場所
 
 ## Getting Started
 
-$B<+J,MQ$N3P=q$d;(B?$J$b$N$r4IM}$9$k>l=j(B
+自分用の覚書や雑多なものを管理する場所
 
 ### Prerequisites
 
-$B$J$7(B
+なし
 
 
 ### Installing
 
-$B$J$7(B
+なし
 
 
 ## Deployment
 
-$B$J$7(B
+なし
 
 ## Built With
 
-$B$J$7(B
+なし
 
 ## Contributing
 
-$B$J$7(B
+なし
 
 
 ## Authors
