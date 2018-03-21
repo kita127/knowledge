@@ -6,6 +6,10 @@ $ gitk --all
 * クローンを作成する
 $ git clone `pass`
 
+* ローカルリポジトリを特定のリビジョンに戻す
+  (変更は全て削除)
+$ git reset --hard `id`
+
 * ブランチの一覧を見る
 $ git branch -a
 
