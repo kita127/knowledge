@@ -1,0 +1,542 @@
+
+Why Haskell matters
+
+なぜHaskellなのか
+
+【出典】
+https://wiki.haskell.org/Why_Haskell_matters
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 2 What can Haskell offer the programmer?
+
+Haskell is a modern general purpose language developed to incorporate
+ the collective wisdom of the functional programming community
+ into one elegant, powerful and general language. 
+
+ 2 Haskellがプログラマーに提供するもの
+
+Haskellはひとつのエレガントで強力かつ汎用的な言語を開発するために
+ 関数型プログラムコミュニティの知識を集約した組織により開発された
+ モダンで汎用的な言語です.
+
+
+
+ 2.1 Purity
+
+Unlike some other functional programming languages Haskell is pure.
+ It doesn't allow any side-effects.
+ This is probably the most important feature of Haskell.
+ We've already briefly discussed the benefits of pure,
+ side-effect free,
+ programming - and there's not much more we can say about that.
+ You'll need to experience it yourself. 
+
+
+ 2.1 純粋性
+
+その他の関数型言語とは違いHaskellは純粋です.
+ それは副作用を許容しません.
+ これは恐らくHaskellにおける最も重要な特徴でしょう.
+ 既に純粋性のもたらす利益や,副作用からの開放,プログラミングについて簡単に
+ 論じました - そしてそれ以上我々がそのことについて説明できることはありません.
+ 貴方自身でそれを体験する必要があります.
+
+
+
+ 2.2 Laziness
+
+Another feature of Haskell is that it is lazy
+ (technically speaking, it's "non-strict").
+ This means that nothing is evaluated until it has to be evaluated.
+ You could, for instance,
+ define an infinite list of primes without ending up in infinite recursion.
+ Only the elements of this list that are actually used will be computed.
+ This allows for some very elegant solutions to many problems.
+ A typical pattern of solving a problem
+ would be to define a list of all possible solutions
+ and then filtering away the illegal ones.
+ The remaining list will then only contain legal solutions.
+ Lazy evaluation makes this operation very clean.
+ If you only need one solution you can
+ simply extract the first element of the resulting list
+ - lazy evaluation will make sure that nothing is needlessly computed. 
+
+
+ 2.2 怠惰性
+
+もうひとつのHaskellの特徴は怠惰だということです
+ (技術的にはそれを"非正格"といいます)
+ これは評価する必要があるまで何も評価されないことを意味します.
+ 例えば無限の再帰による終了のない素数の無限リストを定義することができます.
+ 実際に使われるリストの要素だけが計算されます.
+ これによりたくさんの問題に対して多くのとても洗練された解決法が提供されます.
+ 問題を解決する典型的なパターンは全ての可能な解決策のリストを定義し
+ そこから違法なものを取り除くことでしょう.
+ 残ったリストは適切な解決を含んだものだけでしょう.
+ 遅延評価はこの作業をとても簡潔にするでしょう.
+ ひとつの結果だけが欲しい場合は結果のリストから簡単に最初の要素だけを
+ 抜き出すことが可能です
+ - 遅延評価は不要な計算はされないことを確かとします.
+
+
+
+ 2.3 Strong typing
+
+Furthermore Haskell is strongly typed, this means just what it sounds like.
+ It's impossible to inadvertently convert a Double to an Int,
+ or follow a null pointer.
+ This also leads to fewer bugs.
+ It might be a pain in the neck in the rare cases
+ where you need to convert an Int to a Double explicitly
+ before performing some operation,
+ but in practice this doesn't happen often enough to become a nuisance.
+ In fact, forcing each conversion to be explicit often helps
+ to highlight problem code.
+ In other languages where these conversions are invisible,
+ problems often arise when the compiler treats a double like an integer or,
+ even worse, an integer like a pointer.
+
+そのうえHaskellは強力な型付けです.
+ うっかりDouble型をInt型に変換したり,
+ nullポインタを辿ってしまうことを不可能にします.
+ これはまたバグを少なくすることに繋がります.
+ 処理を実行する前にIntをDoubleに明示的に変換する必要があるような
+ 稀なケースでは困ったことになりますが,
+ 実際には困りごとになるほどそれはほぼ起きえません.
+ 実際,強制的に各変換処理を明示することは度々問題のある
+ コードを強調表示する助けとなります.
+ これらの変換が暗黙的に行われるその他の言語では,
+ コンパイラーが倍精度を整数と扱うときや、悪くすると
+ 整数をポインタとして扱う際によく問題が発生します.
+
+
+
+Unlike other strongly typed languages types
+ in Haskell are automatically inferred.
+ This means that you very rarely have to declare the types of your functions,
+ except as a means of code documentation.
+ Haskell will look at how you use the variables and
+ figure out from there what type the variable should be
+ - then it will all be type-checked to ensure there are no type-mismatches.
+ Python has the notion of "duck typing",
+ meaning "If it walks and talks like a duck, it's a duck!".
+ You could argue that Haskell has a much better form of duck typing.
+ If a value walks and talks like a duck,
+ then it will be considered a duck through type inference,
+ but unlike Python the compiler will also catch errors if later on it tries
+ to bray like a donkey! So you get the benefits of strong typing
+ (bugs are caught at compile-time, rather than run-time)
+ without the hassle that comes with it in other languages.
+ Furthermore Haskell will always infer the most general type on a variable.
+ So if you write, say, a sorting function without a type declaration,
+ Haskell will make sure the function will work
+ for all values that can be sorted.
+
+
+
+その他の強い型付けの言語と違いHaskellの型は
+ 自動で推定されます.
+ コードをドキュメント化したいという目的を除けば、自分が作成した関数の型を
+ 明示する必要がほとんどないということを表しています.
+ Haskellは値がどのように使われるかを見て、
+ そこからその値の型が何であるべきかを理解します
+ - そして型の不整合がないことを確実にするために型チェックを行います.
+ Pythonには"ダックタイピング"と呼ばれる概念があります,
+ それは"もし何かがアヒルのように歩き、泣けばそれはアヒルである"という考えです.
+ あなたはHaskellはより洗練されたダックタイピングスタイルを
+ 持つとことを示すことができます.
+ 値が型推論によりアヒルであると検討されたとしても
+ Pythonとは違いコンパイラーはその後にその値がロバのように鳴く事を試みられたと
+ 判断した場合はエラーをも検出します.
+ それ故、あなたは強い型付けの利点を得ることができます
+ (バグはランタイムよりもコンパイル時に発見されるため)
+ その他の言語に付随する困りごとはなしに.
+ その上Haskellは常にその値における最も汎用的な型を推論します.
+ したがって、もし型宣言なしに並べ替えを行う関数を定義したのであれば
+ Haskellは並べ替え可能な全ての値に対してその関数が機能する事を約束します.
+
+Compare how you would do this in certain object oriented languages.
+ To gain polymorphism you would have to use some base class,
+ and then declare your variables as instances of subclasses
+ to this base class.
+ It all amounts to tons of extra work and ridiculously
+ complex declarations just to proclaim the existence of a variable.
+ Furthermore you would have to perform tons of type conversions
+ via explicit casts - definitely not a particularly elegant solution.
+ If you want to write a polymorphic function in these object
+ oriented languages you would probably declare the parameters
+ as an object of a global base class (like "Object" in Java),
+ which essentially allows the programmer to send anything into the function,
+ even objects which can't logically be passed to the function.
+ The end result is that most functions you write
+ in these languages are not general, they only work on a single data type.
+ You're also moving the error checking from compile-time to run-time.
+ In large systems where some of the functionality is rarely used,
+ these bugs might never be caught until they cause
+ a fatal crash at the worst possible time.
+
+Haskell provides an elegant, concise and safe way to write your programs.
+ Programs will not crash unexpectedly, nor produce strangely garbled output.  
+
+
+特定のオブジェクト指向言語でこれをどのように行うか見比べてみましょう.
+ 多態性を得るためにいくつかの基本クラスを使用し、
+ そのサブクラスのインスタンスとして値を宣言する必要があります.
+ 変数の存在を宣言するだけで多大な作業と馬鹿げたほど複雑な宣言に
+ 及びます.
+ その上明示的なキャストにより多大な型変換を要する必要があるでしょう.
+ - とりわけエレガントな解決策ではないことは明白です.
+ これらのオブジェクト指向言語によって多相的な関数を書くとすれば
+ おそらくは引数を包括的な基本クラス(Javaで言う"Object"クラスのような)
+ によって宣言するでしょう、本質的にプログラマにあらゆる値を関数に渡す事を
+ 許可し、その上、値は論理的に関数に渡されないような.
+ 最終的にはこれらの言語で書かれたほとんどの関数は汎用的ではありません、
+ これらは単一のデータ型でしか機能しません.
+ またエラー確認をコンパイル時にするのではなく実行時にするようにしてしまいます.
+ 大規模なシステムにおけるごく稀にしか使用されないいくつかの機能においては
+ これらのバグは起こりうる最悪のタイミングで致命的なクラッシュを引き起こすまで
+ 補足されない可能性もあります.
+
+Haskellはエレガントで、簡潔で安全なプログラムを記述する方法をを提供します.
+ プログラムは予期しないクラッシュを起こしません、奇妙で要領を得ない出力
+ もまた生み出すことはありません.
+
+
+
+
+
+
+ 2.4 Elegance
+
+Another property of Haskell that is very important to the programmer,
+ even though it doesn't mean as much in terms of stability or performance,
+ is the elegance of Haskell.
+ To put it simply: stuff just works like you'd expect it to.
+
+プログラマにとってとても重要なもうひとつのHaskellの特徴は,
+ パフォーマンスや安定性のうえではそれほど意味はないのですが,
+ Haskellの優雅さにあります.
+
+
+To highlight the elegance of Haskell
+ we shall now take a look at a small example.
+              ^^^^^^^^^^^
+ We choose QuickSort-inspired filtering sort
+ because it's a simple algorithm that is actually useful.
+ We will look at two versions - one written in C++,
+ an imperative language, and one written in Haskell.
+ Both versions use only the functionality
+ available to the programmer without importing any extra modules
+ (otherwise we could just call "sort" in each language's standard library
+ and be done with it!).
+ Thus, we use the standard sequence primitives of each language
+ (a "list" in Haskell and an "array" in C++).
+ Both versions must also be polymorphic
+ (which is done "automatically" in Haskell,
+ and with templates in C++).
+ Both versions must use the same recursive algorithm.
+
+
+Haskellの優雅さをに着目するために
+ 小さい例を見てみましょう．
+
+ 例はクイックソートに基づいたフィルタリングソートです
+ なぜなら実際に有用でシンプルなアルゴリズムだからです.
+ 2つのバージョンのコードをお見せします - ひとつはC++で書かれた
+ 命令型言語によるもの,そしてもうひとつはHaskellによるものです.
+ 両バージョンとも外部モジュールをインポートせずに使用可能な機能のみを使います
+ (そうでなければそれぞれの標準ライブラリに搭載されている"sort"関数をコール
+ するだけで完了してしまいます!).
+ それ故に,各言語における標準的な基本機能のみを使用します
+ (Haskellは"リスト"とよばれるものでC++は"配列"を使用します)
+ 両バージョンともまた多態的にしなければなりません
+ (Haskellでは自動的になされています, C++はテンプレートを使用します).
+ 両バージョンともまたおなじ再帰アルゴリズムを使用しなければなりません.
+
+
+Please note that this is not intended as a definite comparison
+ between the two languages.
+ It's intended to show the elegance of Haskell,
+ the C++ version is only included for comparison
+ (and would be coded quite differently
+ if you used the standard QuickSort algorithm or
+ the Standard Template Libraries (STL), for example).
+
+注意して欲しいのは2つの言語の比較をすることを意図しているわけでは
+ ないということです.
+ Haskellのエレガントさに注目して欲しいことを意図しているのであって
+ そのためだけの比較としてC++を使っているだけです
+ (もし標準的なクイックソートアルゴリズムを使用するか
+ STLを使用するのであれば例とはかなり違ったコードとなるでしょう)
+
+
+-----------------------------------------------------------------------
+template <typename T>
+void qsort (T *result, T *list, int n)
+{
+    if (n == 0) return;
+    T *smallerList, *largerList;
+    smallerList = new T[n];
+    largerList = new T[n];
+    T pivot = list[0];
+    int numSmaller=0, numLarger=0;
+    for (int i = 1; i < n; i++)
+        if (list[i] < pivot)
+            smallerList[numSmaller++] = list[i];
+        else
+            largerList[numLarger++] = list[i];
+
+    qsort(smallerList,smallerList,numSmaller);
+    qsort(largerList,largerList,numLarger);
+
+    int pos = 0;
+    for ( int i = 0; i < numSmaller; i++)
+        result[pos++] = smallerList[i];
+
+    result[pos++] = pivot;
+
+    for ( int i = 0; i < numLarger; i++)
+        result[pos++] = largerList[i];
+
+    delete [] smallerList;
+    delete [] largerList;
+};
+-----------------------------------------------------------------------
+
+We will not explain this code further,
+ just note how complex and difficult it is to understand at a glance,
+ largely due to the programmer having to deal with low-level details
+ which have nothing to do with the task at hand.
+ Now, let's take a look at a Haskell version of FilterSort,
+ which might look a something like this.
+
+
+さらにこのコードを説明するつもりはありません,
+ どれほど複雑で一瞥して理解することが困難であるかというだけです,
+ 本質的な処理とは無関係で低レベルな細部の処理が膨大なためです.
+ それではHaskellでのフィルターソートを見てみましょう,
+ ちょうどこんな感じです.
+
+-----------------------------------------------------------------------
+ qsort :: (Ord a) => [a] -> [a]
+ qsort []     = []
+ qsort (x:xs) = qsort less ++ [x] ++ qsort more
+     where less = filter (<x)  xs
+           more = filter (>=x) xs
+-----------------------------------------------------------------------
+
+(This implementation has very poor runtime and space complexity,
+ but that can be improved, at the expense of some of the elegance.)
+
+(この実装はランタイムと空間の使用の複雑さが非常に悪いです,
+ しかしいかほどかの優雅さを犠牲にすれば改善は可能です)
+
+Let's dissect this code in detail,
+ since it uses quite a lot of Haskell syntax
+ that you might not be familiar with.
+
+コードの細部について解剖していきましょう,
+ おそらくは馴染みのないHaskell構文がかなり多く使われていることでしょうから.
+
+
+The first line is a type signature.
+ It declares "qsort" to be function
+ that takes a list "[a]" as input and returns ("->") another list "[a]".
+ "a" is a type variable (vaguely similar to a C++ template declaration),
+ and "(Ord a)" is a constraint that means
+ that only types that have an ordering are allowed.
+ This function is a generic ("template") function,
+ that can sort any list of pairwise-comparable objects.
+ The phrase "(Ord a) => [a] -> [a]" means "if the type 'a' is ordered,
+ than a list of 'a' can be passed in,
+ and another list of 'a' will come out. "
+
+最初の行は型宣言です.
+ "[a]"というリストを入力にとり、それとは異なるリスト"[a]"を返す関数として
+ "qsort"を宣言しています.
+ "a" は型変数です(C++で言うところのテンプレートみたいなものです),
+ "(Ord a)" は順序付けの可能な型のみが許可されるという事を意味する構成要素です.
+ この関数はジェネリクス(テンプレート)な関数であり,
+ 対での比較ができるオブジェクトのリストに対してソート可能です.
+ "(Ord a) => [a] -> [a]"というフレーズは"もし型aが順序性を持っていれば,
+ 'a'のリストは関数に渡すことができ,そして別の'a'のリストが出力される."
+ ということを意味しています.
+
+
+The function is called qsort and takes a list as a parameter.
+ We define a function in Haskell like so: funcname a b c = expr,
+ where funcname is the name of the function, a, b, and, c
+ are the parameters and expr is the expression to be evaluated
+ (most often using the parameters).
+ Functions are called by simply putting the function name first
+ and then the parameter(s).
+ Haskell doesn't use parenthesis for function application.
+ Functions simply bind more tightly than anything else,
+ so "f 5 * 2", for instance,
+ would apply f to 5 and then multiply by 2,
+ if we wanted the multiplication to occur before
+ the function application then we would use parenthesis like so "f (5*2)".
+
+関数はqsortと呼ばれ,リストをパラメータとしてとります.
+ Haskellの関数はこのように定義します: funcname a b c = expr,
+ funcname は関数の名前です, a, b, cは引数です,
+ exprは評価される式です(ほとんどの場合引数を使います).
+ 関数は関数名が最初に置かれその後にパラメータが続く簡素な記述により
+ 呼びだされます.
+ Haskellは関数を適用する際に括弧は使用しません.
+ 関数は他のあらゆるものよりも堅く結びつけられます,
+ 例えば,"f 5 * 2",とあれば
+ fを5に適用してから2を掛けます,
+ もし掛け算を関数の適用より先に起こしたい場合は
+ "f (5*2)"のように括弧を使用します.
+
+Let's get back to FilterSort.
+ First we see that we have two definitions of the functions.
+ This is called pattern matching and
+ we can briefly say that it will test the argument passed to
+ the function top-to-bottom and use the first one that matches.
+ The first definition matches against [] which in
+ Haskell is the empty list (a list of 1,2 and 3 is [1,2,3]
+ so it makes sense that an empty list is just two brackets).
+ So when we try to sort an empty list, the result will be an empty list.
+ Sounds reasonable enough, doesn't it?
+ The second definition pattern matches against a list
+ with at least one element.
+ It does this by using (x:xs) for its argument.
+ The "cons" operator is (:) and it simply puts an element in front of a list,
+ so that 0 : [1,2,3] returns [0,1,2,3].
+ Pattern matching against (x:xs) is a match against
+ the list with the head x and the tail xs
+ (which may or may not be the empty list).
+ In other words, (x:xs) is a list of at least one element.
+ So since we will need to use the head of the list later,
+ we can actually extract this very elegantly by using pattern matching.
+ You can think of it as naming the contents of the list.
+ This can be done on any data construct, not just a list.
+ It is possible to pattern match against an arbitrary variable name
+ and then use the head function on that to retrieve the head of the list.
+ Now if we have a non empty list,
+ the sorted list is produced by sorting all elements that are
+ smaller than x and putting that in front of x,
+ then we sort all elements larger than x and put those at the end.
+ We do this by using the list concatenation operator ++.
+ Notice that x is not a list so the ++ operator won't work on it alone,
+ which is why we make it a singleton-list by putting it inside brackets.
+ So the function reads "To sort the list,
+ sandwich the head between the sorted list of all elements
+ smaller than the head,
+ and the sorted list of all elements larger than the head".
+ Which could very well be the original algorithm description.
+ This is very common in Haskell.
+ A function definition usually resembles the informal
+ description of the function very closely.
+ This is why I say that Haskell has a smaller semantic gap than
+ other languages.
+
+フィルターソートに戻りましょう.
+ 始めに関数の定義が2つあることがわかります.
+ これはパターンマッチと呼ばれており
+ 手短に説明すると関数に渡される引数は上から下へ走査され最初にマッチする関数が
+ 適用されます.
+ 最初の定義は[]に対してマッチします,これはHaskellにおける空リストです(1,2,3
+ のリストは[1,2,3]です(空リストはちょうど2つの空括弧であることはとても
+ 理にかなっています).
+ 空リストに対してソートを試した場合,結果は空リストになるでしょう.
+ 十分に合理的な感じではないでしょうか?
+ 2つ目の定義パターンには少なくとも1つの要素のリストにマッチします.
+ 引数に(x:xs)を使うことによってそれは可能です.
+ (:)は"cons"オペレータであり,単純にリストの先頭に要素を加えます,
+ 例えば 0 : [1,2,3] は[0,1,2,3]を返します.
+ (x:xs)に対するパターンマッチは先頭がxで以降がxs(xsは空リストだったり
+ そうではなかったりします)のリストに対してマッチします.
+ 言い換えれば(x:xs)は少なくとも一つの要素を持つリストです.
+ 後でリストの先頭を使う必要がある際に
+ パターンマッチの使用によってとても実際エレガントにそれを取り出すことが可能です.
+ リスト内容に名前をつけることも可能です.
+ これはリスト以外のあらゆるデータの構成物に対して行うことが可能です.
+ 任意の変数名に対してパターンマッチを行い,head関数を使用してリストの先頭要素を
+ 取り出すことも可能です.
+ それでは空のリストではないとしましょう,
+ ソート済みのリストはxより小さい要素でソートしたものをxの前に置き､
+ xより大きい要素でソートしたものをxの後に置くことによって提供されます.
+ これはリスト結合オペレータ ++により行います.
+ 注意して欲しいのはリストではないxだけでは ++ 演算子は使用できないため,
+ xをブラケットの中に於いて単一要素のリストとしています.
+ つまりは関数はこのように解釈することができます"sortは先頭要素を
+ 全ての要素のなかで先頭要素より小さい要素のソート済みのリストと全ての要素のなかで
+ 先頭要素より大きい要素のソート済みのリストで挟むことである"と.
+ これはアルゴリズムの記述そのものと言うこともできます.
+ これはHaskellにおいては非常に一般的です.
+ 関数の定義は概ねにおいて関数のおおよその概要に非常に似ています.
+ これは私がHaskellは他の言語と比べてより意味的な相違が少ないと言うことの理由です.
+
+
+But wait, we're not done yet! How is the list less and more computed?
+ Well, remember that we don't care about sequencing in Haskell,
+ so we've defined them below the function using the where notation
+ (which allows any definitions to use the parameters of the function
+ to which they belong).
+ We use the standard prelude function filter,
+ I won't elaborate too much on this now,
+ but the line less = filter (<x) xs will use filter (<x) xs to filter
+ the list xs.
+ You can see that we actually pass the function which will be used
+ to filter the list to filter,
+ an example of higher order functions.
+ The function (<x) should be read out "the function 'less than x'"
+ and will return True if an element passed to it is less than x
+ (notice how easy it was to construct a function on the fly,
+ we put the expression "<x",
+ "less than x", in parenthesis and sent it off to
+ the function - functions really are just another value!).
+ All elements that pass the test are output from the filter function
+ and put inside less.
+ In a same way (>=x) is used to filter the list for all elements
+ larger than or equal to x.
+
+待ってください,まだ終わっていません!
+ Haskellにおいてはシーケンシングについては気にしないことを思い出してください,
+ その概念を元にそれらを定義します
+ (あらゆる定義は関数の引数となることが可能です)
+ スタンダードpreludeのfilter関数を使用します,
+ 現段階ではこれについて詳細に説明はするつもりはありませんが,
+ less = filter (<x) xsはリスト xs をフィルタリングします.
+ filter関数でリストをフィルタリングするために関数を実際に渡せることがわかる
+ でしょう.
+ これは高階関数の例です.
+ 関数 (<x) は"'x より小さい'という関数"であり
+ 渡された要素が x より小さい場合は真を返します.
+ (その場で関数を構築することがいかに簡単か注意してください,
+ "<x" と式を書く,
+ "x より小さい"という関数を括弧で括り関数に渡します - 
+ 関数は単に値のひとつに過ぎません!).
+ テストに合格した全ての要素はfilter関数の出力となり
+ less に紐付けられます.
+ 同じ方法で (>=x) は x 以上の全ての要素をフィルタリングするために
+ 使用されます.
+
+Now that you've had the syntax explained to you,
+ read the function definition again.
+ Notice how little time it takes to get an understanding about
+ what the function does.
+ The function definitions in Haskell explain what it computes, not how.
+
+これであらかたの構文についての説明を終えました,
+ 関数定義に戻りましょう.
+ 関数が何をするかを理解するのにかかる時間がどのように少ないことかに注目
+ してください.
+ Haskellにおける関数定義は何を評価するかを説明します、どのようにではなく.
+
+
+If you've already forgotten the syntax outlined above,
+ don't worry! We'll go through it more thoroughly and
+ at a slower pace in the tutorials.
+ The important thing to get from this code example is
+ that Haskell code is elegant and intuitive.
+ 
+
+もし上述の構文を忘れてしまったとしても心配しないで下さい!
+ より徹底的にかつゆっくりしたペースでチュートリアルを行います.
+ この例文から得られる大切なこととはHaskellコードは
+ エレガントかつ直感的ということです.
