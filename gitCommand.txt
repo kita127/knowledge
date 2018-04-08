@@ -34,3 +34,10 @@ $ git add `対象のファイル`
 
 * インデックスの変更をローカルリポジトリにコミット
 $ git commit `対象のファイル` -m "タイトル" -m "本文"
+
+
+git設定
+以下.gitconfigファイルに設定する内容
+
+* git status等の日本語表記崩れを修正する
+	quotepath = false
