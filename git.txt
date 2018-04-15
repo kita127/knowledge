@@ -36,6 +36,12 @@ $ git add `対象のファイル`
 $ git commit `対象のファイル` -m "タイトル" -m "本文"
 
 
+* リモートリポジトリの情報を取得する
+$ git fetch
+
+* fetchしたリモートリポジトリの状態をローカルリポジトリに反映する
+$ git merge HEAD_FETCH
+
 git設定
 以下.gitconfigファイルに設定する内容
 
