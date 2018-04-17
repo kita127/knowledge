@@ -1,0 +1,2 @@
+# Haskellのサンプルプロジェクト
+stackを用いたHaskellのサンプルプロジェクト
