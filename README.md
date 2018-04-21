@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-自分用の覚書や雑多なものを管理する場所
+自分用の覚書や雑多なものを管理する
 
 ### Prerequisites
 
