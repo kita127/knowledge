@@ -4,6 +4,12 @@
 ### バージョンツリーを表示(全てのブランチ)
 gitk --all
 
+### Gitリポジトリを作成する
+git init
+
+### リモートリポジトリの情報を追加
+git remote add origin `リモートリポジトリパス.git`
+
 ### クローンを作成する
 git clone `pass`
 
