@@ -49,5 +49,8 @@ git merge HEAD_FETCH
 ## git コンフィグ
 以下.gitconfigファイルに設定する内容
 
+### git コンフィグの確認
+git config --global --list
+
 ### git status等の日本語表記崩れを修正する
 quotepath = false
