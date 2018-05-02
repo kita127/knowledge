@@ -46,6 +46,12 @@ git fetch
 ### fetchしたリモートリポジトリの状態をローカルリポジトリに反映する
 git merge HEAD_FETCH
 
+### Comparison between HEAD and previous HEAD
+git diff HEAD HEAD~ (previous previous HEAD~~)
+
+### View logs of all branches
+git log --all
+
 ## git コンフィグ
 以下.gitconfigファイルに設定する内容
 
