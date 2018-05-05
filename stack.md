@@ -15,3 +15,6 @@ stack install<br>
 ubuntuの場合は.profileに以下を記述<br>
 PATH="~/.local/bin:$PATH"<br>
 export PATH<br>
+
+## プロジェクトをフルクリーン(.stack-workもまるごと消す)
+stack clean --full
