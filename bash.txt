@@ -1,0 +1,14 @@
+* bash
+
+
+* 前にいたディレクトリへバック
+$ cd -
+
+* カレントディレクトリのパスをクリップボードにコピー
+$ pwd | pbcopy
+
+* pbcopyのでディレクトリ移動
+$ cd `pbpaste`
+
+* search installed package
+$ dpkg -l
