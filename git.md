@@ -37,6 +37,12 @@ git push -u origin `作成したブランチ名`
 ### ワークの変更をインデックスする
 git add `対象のファイル`
 
+### gitの管理対象の全ファイルをadd
+git add -u
+
+### .gitignoreで対象外のファイルを除く全てのadd
+git add -A
+
 ### インデックスの変更をローカルリポジトリにコミット
 git commit `対象のファイル` -m "タイトル" -m "本文"
 
