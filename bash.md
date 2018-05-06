@@ -13,3 +13,9 @@ cd `pbpaste`
 
 ### 実行時間計測
 time コマンド
+
+### search installed package
+dpkg -l
+
+### check directory capacity
+du -s
