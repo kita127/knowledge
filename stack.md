@@ -10,6 +10,7 @@ https://docs.haskellstack.org/en/stable/install_and_upgrade/#windows
 ### インストール後
 シェルやコマンドプロンプトから`stack`コマンドが実行できることを確認する<br>
 `stack update`を行いグローバルプロジェクト用のフォルダを作成する<br>
+`stack upgrade`で最新のstackバージョンに更新する<br>
 `stack setup`でGHCをインストール(ver.1.6.1以降はbuild時になければインストールしてくれる模様)<br>
 
 ## アプリケーション
