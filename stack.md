@@ -38,3 +38,13 @@ stack exec -- hoogle generate
 
 #### プロジェクトデータベースの作成
 stack hoogle
+
+## コマンド
+### stack setup
+GHCコンパイラをインストールする<br>
+Ver 1.6.以降はstack buildした際にインストールされるそうなので不要かも？<br>
+### stack update
+パッケージインデックスを最新のものに更新する<br>
+初回実行時はグローバルプロジェクトフォルダ$HOME/.stackに作成する<br>
+### stack upgrade
+stackバージョンをlatestのものに更新
