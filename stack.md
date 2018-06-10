@@ -1,4 +1,16 @@
 # stack
+## インストール
+### Windows
+下記のstackのダウンロードページより、インストーラーをダウンロードして実行する<br>
+https://docs.haskellstack.org/en/stable/install_and_upgrade/#windows
+※Windowsではパスや実行できるコマンドの長さに制限があるので、stackやプロジェクトが利用するディレクトリをルートの<br>
+の近くに設定しておく<br>
+環境変数STACK_ROOTをc:\stack_rootという値にする<br>
+
+### インストール後
+シェルやコマンドプロンプトからstackコマンドが実行できることを確認する<br>
+stack updateを行いグローバルプロジェクト用のフォルダを作成する<br>
+stack setupでGHCをインストール(ver.1.6.1以降はbuild時になければインストールしてくれる模様)<br>
 
 ## アプリケーション
 ### プロジェクトビルド
