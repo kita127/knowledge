@@ -8,9 +8,9 @@ https://docs.haskellstack.org/en/stable/install_and_upgrade/#windows
 環境変数STACK_ROOTをc:\stack_rootという値にする<br>
 
 ### インストール後
-シェルやコマンドプロンプトからstackコマンドが実行できることを確認する<br>
-stack updateを行いグローバルプロジェクト用のフォルダを作成する<br>
-stack setupでGHCをインストール(ver.1.6.1以降はbuild時になければインストールしてくれる模様)<br>
+シェルやコマンドプロンプトから`stack`コマンドが実行できることを確認する<br>
+`stack update`を行いグローバルプロジェクト用のフォルダを作成する<br>
+`stack setup`でGHCをインストール(ver.1.6.1以降はbuild時になければインストールしてくれる模様)<br>
 
 ## アプリケーション
 ### プロジェクトビルド
