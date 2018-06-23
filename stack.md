@@ -49,3 +49,8 @@ Ver 1.6.以降はstack buildした際にインストールされるそうなの�
 初回実行時はグローバルプロジェクトフォルダ$HOME/.stackに作成する<br>
 ### stack upgrade
 stackバージョンをlatestのものに更新
+
+## GHCi
+### ghcオプションを設定する
+:set -X`オプション`<br>
+example / :set -XOverloadedStrings
