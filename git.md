@@ -66,3 +66,8 @@ git config --global --list
 
 ### git status等の日本語表記崩れを修正する
 quotepath = false
+
+## github
+### リポジトリ削除
+リポジトリの画面でsettingを選択<br>
+下の方に削除ボタンがあるので選択
