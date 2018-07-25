@@ -41,10 +41,31 @@ c) Automation : AutoKey supports Python scripts and has a very useful API’s to
  So you can use it to automate any thing you can imagine !
 
 The biggest advantage of AutoKey is that it works across all applications.
- So I can add a keyword which expands to a code snippet and use it in multiple applications – say in vim and also in gedit without any extra work.
+ So I can add a keyword which expands to a code snippet and use it in multiple applications – sayvim and also in gedit without any extra work.
 
 
 AutoKey のホームページでは簡潔に"AutoKey は Linux や X11 へのデスクトップ自動化便利ツールです.
  短縮形のタイプやホットキーによって事実上様々なタスクを自動化することを可能にしてくれます.
  初心者のための高度なアクセスを可能にするフル機能のGUIと, 同じく完全な柔軟性と Python のパワーを提供するスクリプティングインターフェースを提供します."
  と説明されています.
+
+もしあなたが Windows の AutoHotKey を使ったことがあれば, すぐに AutoKey を心地よく使えるでしょう.
+(もし知らなければ是非調べてみてください)
+ AutoKey は AutoHotKey のカスタムスクリプティング言語の代わりに Python をスクリプティング言語として使用します.
+ しかしポテンシャルや機能はとても似ています.
+
+AutoKey は複数のシナリオで使用できます.
+a) 文の代替 : 長い展開式を短い省略形で置き換えます.
+ 例えば adr はあなたの住所に置き換わる.
+b) ホットキー : もしあなたが私の様なキーボード野郎であればそれを使って様々なプログラムを起動できます.
+ 例えば私は windows+c で chrome が windows+g で gedit が立ち上がるなどしています.
+ あるいは､ AutoKey をアプリケーションにホットキーを送信するようにもできます.
+ (例えば ctrl+s を自動で押す等)
+c) 自動化 : AutoKey は Python スクリプトとウィンドウ, クリップボード, マウスなどをコントロールためのとても便利なAPIをサポートしています.
+ あなたはイメージした通りに自動化するためにそれを使うことができます.
+
+AutoKey 最大の長所は全てのアプリケーションをまたいで実行されるということです.
+ コードの断片に展開されるキーワードを追加し様々なアプリケーションで使用することができます - vim または gedit など余計な手間をかけることなく.
+
+
+### Installation
