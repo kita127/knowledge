@@ -91,3 +91,26 @@ PPA の追加のしかたはリンクページに記載しています.
 もちろん, その他の Linux の亜種を使用していたとしても, ダウンロードページからいつでも AutoKey のソースをインストールすることができます.
 
 ### Starting AutoKey
+
+You can start AutoKey in Ubuntu by Applications -> Accessories -> AutoKey.
+Or in command line (for GTK) as /usr/bin/autokey-gtk.
+Once it is started , you will see an blue icon with "A" in the tray.
+
+Once you start using AutoKey , you will prefer to start it when the system starts.
+For Ubuntu (GTK) AutoKey, System -> Preferences -> Startup Applications , enter "/usr/bin/autokey-gtk" as an additional startup entry.
+Note : AutoKey also has an option in its preference to start automatically but it did not work for me.
+
+
+
+Ubuntu では AutoKey をApplications -> Accessories -> AutoKey で開始できます.
+もしくはコマンドライン(GTKでは)から /usr/bin/autokey-gtk をたたきます.
+一度開始すると, "A" という青いアイコンがトレーに見ることができるでしょう.
+
+一度 AutoKey を起動したら, システム開始時にスタートしたほうがよいと思うでしょう.
+Ubuntu(GTK) の場合は, System -> Preferences -> Startup Applications を選択, 追加のスタートアップエントリーとして "/usr/bin/autokey-gtk" を入力します.
+
+注 : AutoKey は自前の優先オプションに自動でスタートするためのものがありますが, 私の環境では機能しませんでした.
+
+
+### Some Basics
+
