@@ -79,4 +79,15 @@ Instructions for adding the PPA is in the linked page.
 I would recommend getting the latest version (0.70) as it has lot of new features and some important bug fixes.
 Of course, if you use any other Linux variant, you can always install from AutoKey’s source at the download page.
 
+AutoKey のホームページからすべての有益な機能を読むことができます.
+Google コードページは最近のものです(そして使用されている).ほとんどのネット上のリンクは sourceforge のページを指しているにもかかわらず.
+
+AuboKey のインストールには様々な方法がありそしてそれはあなたの OS に依存します.
+Ubuntu に於いては update manager を使用するのが最も簡単な方法です.
+私は依存するものを自動でインストールしてくれる update manager の使用をおすすめします.
+もし最新のコードにしたい場合の最もよい解決策はあなたのシステムに AutoKey PPA を追加することです.
+PPA の追加のしかたはリンクページに記載しています.
+多くの新しい機能や重大なバグが修正された最新版である(0.70)を取得することをおすすめします.
+もちろん, その他の Linux の亜種を使用していたとしても, ダウンロードページからいつでも AutoKey のソースをインストールすることができます.
+
 ### Starting AutoKey
