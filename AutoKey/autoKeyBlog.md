@@ -67,5 +67,16 @@ c) 自動化 : AutoKey は Python スクリプトとウィンドウ, クリッ�
 AutoKey 最大の長所は全てのアプリケーションをまたいで実行されるということです.
  コードの断片に展開されるキーワードを追加し様々なアプリケーションで使用することができます - vim または gedit など余計な手間をかけることなく.
 
-
 ### Installation
+
+You can read all about the utility at AutoKey’s homepage.
+The Google code page is the recent (and active) one even though most links in net points to a sourceforge page.
+
+There are many ways to install AutoKey and it depends on your OS. For Ubuntu, the easiest way is to install using the update manager.
+I would suggest using the update manager as it will install the dependencies automatically.
+If you want to be in the latest code then the best solution is to add AutoKey PPA to your system.
+Instructions for adding the PPA is in the linked page.
+I would recommend getting the latest version (0.70) as it has lot of new features and some important bug fixes.
+Of course, if you use any other Linux variant, you can always install from AutoKey’s source at the download page.
+
+### Starting AutoKey
