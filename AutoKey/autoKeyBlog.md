@@ -133,8 +133,43 @@ AutoKey はほとんどの場合あなたのキーストロークを受けて実
 なにか変更をしたい場合は, 設定(configuration)ダイアログボックスにアクセスする必要があります.
 それは, AutoKey アイコンを右クリックし "Configure" を選択してください.
 
-設定ウィンドウはこのような感じです.
-[画像]
+設定ウィンドウはこのような感じです.<br>
+[画像]<br>
 
 
 ### AutoKey Usage  : Phrases
+
+Phrases are the easiest way to start with AutoKey.
+You can consider this feature as a powerful text expansion.
+For eg you can enter the string "adr" and get it expanded to your whole address.
+
+#### Phrases : Example 1 
+Lets take a simple example.
+Whenever I type the string "akr" , I want it to expand to "Auto key rocks !" .
+To get this , open the AutoKey config editor.
+Create a new phrase by File -> Create -> New Phrase (Or Ctrl + N) .
+Give the phrase a valid name.  (Eg AutoKey).
+In the phrase box (the large text box – which is actually an editor !) , type "Auto Key Rocks !".
+In the "Phrase Settings" section, click on the "Set" button near "Abbreviation".
+Type the abbreviation as "akr" .
+Your screen will look like the image at the bottom.
+Click "OK" and click on "Save" button. Congrats , you have created your first phrase.
+[image]<br>
+
+Lets now test it out. Open gedit (or kate or some editor) and type akr.
+Watch it expand to "Auto key rocks !".
+Now try it in vim. Try it in Firefox. Try it in Open Office. Watch it work at all the places.
+
+#### Phrases : Example 2 
+Now let us make it slightly more complex.
+Lets say we want a tab in between each word.
+(Auto    Key    Rocks    ! ). To do that, select the phrase you just created.
+In the editor box, type the following. "Auto<tab>Key<tab>Rocks<tab>!" .
+Thats right. When AutoKey sees <tab> it expands it to the actual tab character.
+Now save the phrase again and try it .
+
+Tab is not the only hotkey that AutoKey supports.
+It supports virtually all the special keys in the keyboard.
+You can get all of them at AutoKey’s Hotkey’s page .
+
+#### Phrases : Example 3 
