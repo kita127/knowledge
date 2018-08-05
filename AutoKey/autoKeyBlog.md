@@ -143,6 +143,12 @@ Phrases are the easiest way to start with AutoKey.
 You can consider this feature as a powerful text expansion.
 For eg you can enter the string "adr" and get it expanded to your whole address.
 
+
+Phrases は AutoKey を始める最も簡単なやりかたです.
+この性質は強力なテキスト拡張とみなすことができるでしょう.
+例えば文字列 "adr" を入力しあなたの住所全体を得るなど可能です.
+
+
 #### Phrases : Example 1 
 Lets take a simple example.
 Whenever I type the string "akr" , I want it to expand to "Auto key rocks !" .
@@ -153,12 +159,28 @@ In the phrase box (the large text box – which is actually an editor !) , type 
 In the "Phrase Settings" section, click on the "Set" button near "Abbreviation".
 Type the abbreviation as "akr" .
 Your screen will look like the image at the bottom.
-Click "OK" and click on "Save" button. Congrats , you have created your first phrase.
+Click "OK" and click on "Save" button. Congrats , you have created your first phrase.<br>
 [image]<br>
 
 Lets now test it out. Open gedit (or kate or some editor) and type akr.
 Watch it expand to "Auto key rocks !".
 Now try it in vim. Try it in Firefox. Try it in Open Office. Watch it work at all the places.
+
+
+
+シンプルな例を紹介しましょう.
+つねに "akr" とタイプするたびに, "Auto key rocks !" と展開されるようにしましょう.
+それには, AutoKey の設定開きます.
+File -> Create -> New Phrases (もしくは Ctrl + N) で新しい phrase を作成します.
+phrase に妥当な名前を与えます.
+phraseボックス(実際はエディタである大きいテキストボックス)に, "Auto Key Rocks !" と入力します.
+"Phrase Settings" 欄で, "Abbreviation" の近くの "Set" ボタンをクリックします.
+下部の画像のようにスクリーンの状態がなると思います.
+"OK" を押して "Save" ボタンを押します. 見事, 最初の phrase を作成できました.<br>
+[画像]<br>
+
+[[つづき]]
+
 
 #### Phrases : Example 2 
 Now let us make it slightly more complex.
