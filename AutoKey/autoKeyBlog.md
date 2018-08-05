@@ -114,3 +114,27 @@ Ubuntu(GTK) の場合は, System -> Preferences -> Startup Applications を選�
 
 ### Some Basics
 
+AutoKey appears in the tray as a blue colored icon with "A" in it.
+Most of the time, it runs passively , reading your keystrokes.
+Right click on the icon and make sure that the checkbox "Enable Expansions" is checked.
+Only then AutoKey will perform the expansions.
+To make any changes, you need to access its configuration dialog box.
+To get it , right click on the AutoKey icon and select "Configure".
+
+The configure window will look like this.<br>
+[image]<br>
+
+
+
+AutoKey は "A" という表示の青色のアイコンでトレイ内に表示されます.
+AutoKey はほとんどの場合あなたのキーストロークを受けて実行します.
+アイコンを右クリックし "Enable Expansions" のチェックボックスがチェックされていることを確認してください.
+チェックされていれば AutoKey は拡張を展開します.
+なにか変更をしたい場合は, 設定(configuration)ダイアログボックスにアクセスする必要があります.
+それは, AutoKey アイコンを右クリックし "Configure" を選択してください.
+
+設定ウィンドウはこのような感じです.
+[画像]
+
+
+### AutoKey Usage  : Phrases
