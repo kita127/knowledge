@@ -179,19 +179,32 @@ phraseボックス(実際はエディタである大きいテキストボック�
 "OK" を押して "Save" ボタンを押します. 見事, 最初の phrase を作成できました.<br>
 [画像]<br>
 
-[[つづき]]
+今すぐテストしましょう. gedit を開いて(あるいは kate やその他のエディタ) akr とタイプしてください.
+"Auto key rocks !" と展開されるのを目の当たりにしてください.
 
+vim でも Firefox でも Open Office でもすべての場所でそれが機能するのを確かめてください.
 
 #### Phrases : Example 2 
 Now let us make it slightly more complex.
 Lets say we want a tab in between each word.
 (Auto    Key    Rocks    ! ). To do that, select the phrase you just created.
-In the editor box, type the following. "Auto<tab>Key<tab>Rocks<tab>!" .
-Thats right. When AutoKey sees <tab> it expands it to the actual tab character.
+In the editor box, type the following. "Auto`<tab>`Key`<tab>`Rocks`<tab>`!" .
+Thats right. When AutoKey sees `<tab>` it expands it to the actual tab character.
 Now save the phrase again and try it .
 
 Tab is not the only hotkey that AutoKey supports.
 It supports virtually all the special keys in the keyboard.
 You can get all of them at AutoKey’s Hotkey’s page .
+
+さあ, 少し複雑にしましょう.
+各単語間にタブが仮にほしいとしましょう.
+(Auto    Key    Rocks    ! ). これを行うには, あなたが作成した phrase を選択してください.
+エディタボックスに次のようにタイプしてください. "Auto`<tab>`Key`<tab>`Rocks`<tab>`!" .
+そのとおり, AutoKey が `<tab>` を見つけたらそれは実際のタブ文字に展開されます.
+さあ, phrase を記録して再度試してみてください.
+
+タブだけが AutoKey でサポートしている唯一のキーではありません.
+それは実質的にすべてのスペシャルキーをサポートしています.
+AutoKey のホットキーのページでそれらのすべてを知ることができます.
 
 #### Phrases : Example 3 
