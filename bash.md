@@ -19,3 +19,6 @@ dpkg -l
 
 ### check directory capacity
 du -s
+
+### zip 解凍
+unzip `<file>`
