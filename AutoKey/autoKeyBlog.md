@@ -208,3 +208,26 @@ You can get all of them at AutoKey’s Hotkey’s page .
 AutoKey のホットキーのページでそれらのすべてを知ることができます.
 
 #### Phrases : Example 3 
+
+Another of my favorite feature is "Match phrase case to typed abbreviation" .
+ To try it out, give "Auto Key Rocks !" (ie remove those tabs) in the editor box.
+ Click on "Set" button of "Abbreviation" .
+ Select the checkbox "Match phrase case to typed abbreviation".
+ The next checkbox "Ignore case of typed abbreviation" should be automatically become checked.
+ If not check it. Save the phrase. The dialog must look like the image below.
+
+Now experiment with various ways of typing the abbreviation.
+"akr" auto key rocks !
+"Akr" Auto key rocks !
+"AKr" Auto Key Rocks !
+"AKR" AUTO KEY ROCKS !
+
+
+もうひとつの私のお気に入りの機能は "タイプした省略形のフレーズタイプにマッチする" です.
+ 試してみるにはエディターボックスに "Auto Key Rocks !" を与えます(要するに先ほどのタブを消します).
+ "Abbreviation" の "Set" ボタンをクリックしてください.
+ "Match phrase case to typed abbreviation" のチェックボックスを選んでください.
+ 次のチェックボックスである "入力された省略形のケースを無視する" は自動的にチェックになるでしょう.
+ それをチェックしないのであればフレーズを保存します.ダイアログのイメージは下部のようなイメージになるはずです.
+
+### Phrases : Example 4 
