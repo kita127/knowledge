@@ -30,15 +30,15 @@ If you have used AutoHotKey in Windows, then you will be immediately comfortable
   AutoKey uses Python as the scripting language instead of AutoHotKey’s custom scripting language.
  But the potential and functionality are very similar.
 
-AutoKey can be used in multiple scenarios :
+AutoKey can be used in multiple scenarios :<br>
 a) Text Substitution : Replace a short abbreviation with a long expansion.
- Eg adr with your full address.
+ Eg adr with your full address.<br>
 b) Hotkeys : If you are a keyboard person like me, use it open various program.
  For eg I use windows+c for opening chrome, windows+g to open  gedit etc.
  Alternatively, you can make AutoKey "send" hotkeys to the applications.
- (Eg make it press ctrl+s automatically).
+ (Eg make it press ctrl+s automatically).<br>
 c) Automation : AutoKey supports Python scripts and has a very useful API’s to control windows, clipboard and mouse.
- So you can use it to automate any thing you can imagine !
+ So you can use it to automate any thing you can imagine !<br>
 
 The biggest advantage of AutoKey is that it works across all applications.
  So I can add a keyword which expands to a code snippet and use it in multiple applications – sayvim and also in gedit without any extra work.
@@ -54,18 +54,157 @@ AutoKey のホームページでは簡潔に"AutoKey は Linux や X11 へのデ
  AutoKey は AutoHotKey のカスタムスクリプティング言語の代わりに Python をスクリプティング言語として使用します.
  しかしポテンシャルや機能はとても似ています.
 
-AutoKey は複数のシナリオで使用できます.
+AutoKey は複数のシナリオで使用できます.<br>
 a) 文の代替 : 長い展開式を短い省略形で置き換えます.
- 例えば adr はあなたの住所に置き換わる.
+ 例えば adr はあなたの住所に置き換わる.<br>
 b) ホットキー : もしあなたが私の様なキーボード野郎であればそれを使って様々なプログラムを起動できます.
  例えば私は windows+c で chrome が windows+g で gedit が立ち上がるなどしています.
  あるいは､ AutoKey をアプリケーションにホットキーを送信するようにもできます.
- (例えば ctrl+s を自動で押す等)
+ (例えば ctrl+s を自動で押す等)<br>
 c) 自動化 : AutoKey は Python スクリプトとウィンドウ, クリップボード, マウスなどをコントロールためのとても便利なAPIをサポートしています.
- あなたはイメージした通りに自動化するためにそれを使うことができます.
+ あなたはイメージした通りに自動化するためにそれを使うことができます.<br>
 
 AutoKey 最大の長所は全てのアプリケーションをまたいで実行されるということです.
  コードの断片に展開されるキーワードを追加し様々なアプリケーションで使用することができます - vim または gedit など余計な手間をかけることなく.
 
-
 ### Installation
+
+You can read all about the utility at AutoKey’s homepage.
+The Google code page is the recent (and active) one even though most links in net points to a sourceforge page.
+
+There are many ways to install AutoKey and it depends on your OS. For Ubuntu, the easiest way is to install using the update manager.
+I would suggest using the update manager as it will install the dependencies automatically.
+If you want to be in the latest code then the best solution is to add AutoKey PPA to your system.
+Instructions for adding the PPA is in the linked page.
+I would recommend getting the latest version (0.70) as it has lot of new features and some important bug fixes.
+Of course, if you use any other Linux variant, you can always install from AutoKey’s source at the download page.
+
+AutoKey のホームページからすべての有益な機能を読むことができます.
+Google コードページは最近のものです(そして使用されている).ほとんどのネット上のリンクは sourceforge のページを指しているにもかかわらず.
+
+AuboKey のインストールには様々な方法がありそしてそれはあなたの OS に依存します.
+Ubuntu に於いては update manager を使用するのが最も簡単な方法です.
+私は依存するものを自動でインストールしてくれる update manager の使用をおすすめします.
+もし最新のコードにしたい場合の最もよい解決策はあなたのシステムに AutoKey PPA を追加することです.
+PPA の追加のしかたはリンクページに記載しています.
+多くの新しい機能や重大なバグが修正された最新版である(0.70)を取得することをおすすめします.
+もちろん, その他の Linux の亜種を使用していたとしても, ダウンロードページからいつでも AutoKey のソースをインストールすることができます.
+
+### Starting AutoKey
+
+You can start AutoKey in Ubuntu by Applications -> Accessories -> AutoKey.
+Or in command line (for GTK) as /usr/bin/autokey-gtk.
+Once it is started , you will see an blue icon with "A" in the tray.
+
+Once you start using AutoKey , you will prefer to start it when the system starts.
+For Ubuntu (GTK) AutoKey, System -> Preferences -> Startup Applications , enter "/usr/bin/autokey-gtk" as an additional startup entry.
+Note : AutoKey also has an option in its preference to start automatically but it did not work for me.
+
+
+
+Ubuntu では AutoKey をApplications -> Accessories -> AutoKey で開始できます.
+もしくはコマンドライン(GTKでは)から /usr/bin/autokey-gtk をたたきます.
+一度開始すると, "A" という青いアイコンがトレーに見ることができるでしょう.
+
+一度 AutoKey を起動したら, システム開始時にスタートしたほうがよいと思うでしょう.
+Ubuntu(GTK) の場合は, System -> Preferences -> Startup Applications を選択, 追加のスタートアップエントリーとして "/usr/bin/autokey-gtk" を入力します.
+
+注 : AutoKey は自前の優先オプションに自動でスタートするためのものがありますが, 私の環境では機能しませんでした.
+
+
+### Some Basics
+
+AutoKey appears in the tray as a blue colored icon with "A" in it.
+Most of the time, it runs passively , reading your keystrokes.
+Right click on the icon and make sure that the checkbox "Enable Expansions" is checked.
+Only then AutoKey will perform the expansions.
+To make any changes, you need to access its configuration dialog box.
+To get it , right click on the AutoKey icon and select "Configure".
+
+The configure window will look like this.<br>
+[image]<br>
+
+
+
+AutoKey は "A" という表示の青色のアイコンでトレイ内に表示されます.
+AutoKey はほとんどの場合あなたのキーストロークを受けて実行します.
+アイコンを右クリックし "Enable Expansions" のチェックボックスがチェックされていることを確認してください.
+チェックされていれば AutoKey は拡張を展開します.
+なにか変更をしたい場合は, 設定(configuration)ダイアログボックスにアクセスする必要があります.
+それは, AutoKey アイコンを右クリックし "Configure" を選択してください.
+
+設定ウィンドウはこのような感じです.<br>
+[画像]<br>
+
+
+### AutoKey Usage  : Phrases
+
+Phrases are the easiest way to start with AutoKey.
+You can consider this feature as a powerful text expansion.
+For eg you can enter the string "adr" and get it expanded to your whole address.
+
+
+Phrases は AutoKey を始める最も簡単なやりかたです.
+この性質は強力なテキスト拡張とみなすことができるでしょう.
+例えば文字列 "adr" を入力しあなたの住所全体を得るなど可能です.
+
+
+#### Phrases : Example 1 
+Lets take a simple example.
+Whenever I type the string "akr" , I want it to expand to "Auto key rocks !" .
+To get this , open the AutoKey config editor.
+Create a new phrase by File -> Create -> New Phrase (Or Ctrl + N) .
+Give the phrase a valid name.  (Eg AutoKey).
+In the phrase box (the large text box – which is actually an editor !) , type "Auto Key Rocks !".
+In the "Phrase Settings" section, click on the "Set" button near "Abbreviation".
+Type the abbreviation as "akr" .
+Your screen will look like the image at the bottom.
+Click "OK" and click on "Save" button. Congrats , you have created your first phrase.<br>
+[image]<br>
+
+Lets now test it out. Open gedit (or kate or some editor) and type akr.
+Watch it expand to "Auto key rocks !".
+Now try it in vim. Try it in Firefox. Try it in Open Office. Watch it work at all the places.
+
+
+
+シンプルな例を紹介しましょう.
+つねに "akr" とタイプするたびに, "Auto key rocks !" と展開されるようにしましょう.
+それには, AutoKey の設定開きます.
+File -> Create -> New Phrases (もしくは Ctrl + N) で新しい phrase を作成します.
+phrase に妥当な名前を与えます.
+phraseボックス(実際はエディタである大きいテキストボックス)に, "Auto Key Rocks !" と入力します.
+"Phrase Settings" 欄で, "Abbreviation" の近くの "Set" ボタンをクリックします.
+下部の画像のようにスクリーンの状態がなると思います.
+"OK" を押して "Save" ボタンを押します. 見事, 最初の phrase を作成できました.<br>
+[画像]<br>
+
+今すぐテストしましょう. gedit を開いて(あるいは kate やその他のエディタ) akr とタイプしてください.
+"Auto key rocks !" と展開されるのを目の当たりにしてください.
+
+vim でも Firefox でも Open Office でもすべての場所でそれが機能するのを確かめてください.
+
+#### Phrases : Example 2 
+Now let us make it slightly more complex.
+Lets say we want a tab in between each word.
+(Auto    Key    Rocks    ! ). To do that, select the phrase you just created.
+In the editor box, type the following. "Auto`<tab>`Key`<tab>`Rocks`<tab>`!" .
+Thats right. When AutoKey sees `<tab>` it expands it to the actual tab character.
+Now save the phrase again and try it .
+
+Tab is not the only hotkey that AutoKey supports.
+It supports virtually all the special keys in the keyboard.
+You can get all of them at AutoKey’s Hotkey’s page .
+
+さあ, 少し複雑にしましょう.
+各単語間にタブが仮にほしいとしましょう.
+(Auto    Key    Rocks    ! ). これを行うには, あなたが作成した phrase を選択してください.
+エディタボックスに次のようにタイプしてください. "Auto`<tab>`Key`<tab>`Rocks`<tab>`!" .
+そのとおり, AutoKey が `<tab>` を見つけたらそれは実際のタブ文字に展開されます.
+さあ, phrase を記録して再度試してみてください.
+
+タブだけが AutoKey でサポートしている唯一のキーではありません.
+それは実質的にすべてのスペシャルキーをサポートしています.
+AutoKey のホットキーのページでそれらのすべてを知ることができます.
+
+#### Phrases : Example 3 
