@@ -231,3 +231,58 @@ Now experiment with various ways of typing the abbreviation.
  それをチェックしないのであればフレーズを保存します.ダイアログのイメージは下部のようなイメージになるはずです.
 
 ### Phrases : Example 4 
+Another thing to try is to give hotkey to the phrase.
+Of course, it does not make much sense for this small phrase.
+If you have a large paragraph and want it copied in a single command , then hotkey is the way to go.
+Again , hotkeys are very useful when using Scripts. (Which I will discuss shortly)
+
+Before setting a hotkey, the usual caveats apply – make sure it does not clash with other applications’ functionality (Eg ctrl+s for expanding phrases is a bad idea !) .
+Also if you are using Hotkeys make sure it is memorable.
+
+As a simple example, lets make "Auto key rocks" when we press ctrl+alt+q.
+To do that , click "Set" near "Hotkey".
+You will get a dialog. Click on "ctrl" , "alt". Now to set "Q" , click on "Press to set" and type "Q".
+Press "Ok" and save the phrase. Your screen will look the image below  .
+Now type "ctrl+alt+q" in any application and watch it become "Auto key rocks !".
+[image]<br>
+
+もうひとつ確認することはホットキーにフレーズを付与することです.
+もちろん, この小さなフレーズに対してホットキーを与えるのはあまり意味はありません.
+もし, 大きなパラグラフがありなおかつ単一のコマンドでコピーしたい場合, hotkey はベストなやり方です.
+(~~~ is way to go : ~~~ するのがベストだ)
+重ねて, hotkey はスクリプトを使用する際にとても有用です. (後ほど論じます)
+
+hotkey を設定する前に注意すべきことがあります - その他のアプリケーションの機能と衝突しないか確認してください.　(例えば ctrl+s にフレーズの拡張を割り当てるのは良い考えではありません)
+
+シンプルな例として, "Auto key rocks" を ctrl+alt+q を押したときに展開されるようにしましょう.
+そうするには, "Hotkey" 付近の "Set" をクリックしてください.
+ダイアログが表示されます. "ctrl" , "alt" をクリックし, "Press to set" をクリックし "Q" を入力し設定してください.
+"Ok" を押下しフレーズをセーブしてください. スクリーン上は以下のイメージのようになるでしょう.
+様々なアプリケーション上で "ctrl+alt+q" を押下して, "Auto key rocks!" と展開されることを確認してみてください.
+
+### Phrases : Example 5 
+Let us suppose you want your abbreviation to work only in one application.
+This can be achieved using "Window Filter". Let us take an example.
+You want akr to be expanded in Gedit only.
+Notice that any document (new or existing) opened in Gedit ends with the word gedit.
+We will use that as our filter.
+To achieve that , select the phrase and click on "Set" near "Window Filter".
+Enter ".\*gedit" as the filter. There are two things to note here .
+a) The filter is actually a regular expression which has lot of expressive power. 
+b) The regular expression must match the whole window name. Just having "gedit" will not match a gedit window.
+
+あなたの設定した省略系が単一のアプリケーションでだけ動作したいと仮定しましょう.
+(Let's suppose ~~~ : ~~~ と仮定しましょう)
+これは "Window Filter" を使用することで成し遂げられます. 例を挙げましょう.
+akr が Gedit 上でのみ展開したいとします.
+注意すべきは Gedit で開かれたドキュメント(新規も既存も)は gedit というワードで終わるのに気をつけてください.
+それをフィルタとして使用します.
+成し遂げるには, フレーズを選択し "Window Filter" そばの "Set" をクリックします.
+フィルタとして ".\*gedit" と入力してください. 注意すべきことが2点あります.
+a) フィルタは実際のところたくさんの表現をもった正規表現であります.
+b) 正規表現はすべてのウィンドウの名前に対してマッチしなければなりません. 単に "gedit" だけでは gedit のウィンドウにはマッチしません.
+
+
+### Phrases : Example 6 
+
+
