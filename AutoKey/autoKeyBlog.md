@@ -230,7 +230,7 @@ Now experiment with various ways of typing the abbreviation.
  次のチェックボックスである "入力された省略形のケースを無視する" は自動的にチェックになるでしょう.
  それをチェックしないのであればフレーズを保存します.ダイアログのイメージは下部のようなイメージになるはずです.
 
-### Phrases : Example 4 
+#### Phrases : Example 4 
 Another thing to try is to give hotkey to the phrase.
 Of course, it does not make much sense for this small phrase.
 If you have a large paragraph and want it copied in a single command , then hotkey is the way to go.
@@ -260,7 +260,7 @@ hotkey を設定する前に注意すべきことがあります - その他の�
 "Ok" を押下しフレーズをセーブしてください. スクリーン上は以下のイメージのようになるでしょう.
 様々なアプリケーション上で "ctrl+alt+q" を押下して, "Auto key rocks!" と展開されることを確認してみてください.
 
-### Phrases : Example 5 
+#### Phrases : Example 5 
 Let us suppose you want your abbreviation to work only in one application.
 This can be achieved using "Window Filter". Let us take an example.
 You want akr to be expanded in Gedit only.
@@ -283,7 +283,7 @@ a) フィルタは実際のところたくさんの表現をもった正規表�
 b) 正規表現はすべてのウィンドウの名前に対してマッチしなければなりません. 単に "gedit" だけでは gedit のウィンドウにはマッチしません.
 
 
-### Phrases : Example 6 
+#### Phrases : Example 6 
 
 One of the common ways I use Phrase is to expand code snippets.
 For eg when I type cppincs , then I automatically the following snippet.
@@ -311,4 +311,12 @@ return 0;
 }
 ```
 
-### Phrases : Example 7 
+#### Phrases : Example 7 
+
+You can use AutoKey to enter username and password automatically.
+A simple example is to have a phrase like “username`<tab>`password`<enter>`”.
+
+ユーザーネームやパスワードを AutoKey によって自動的に入力することもできます.
+シンプルな例としては phrase に " username`<tab`password`<enter>`" のような展開を記述することです.
+
+### Misc Phrases Features
