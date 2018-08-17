@@ -290,6 +290,11 @@ For eg when I type cppincs , then I automatically the following snippet.
 It works whether in vim or in gedit.
 (If you use primarily vim, then checkout vim plugins like snippetsEmu or snipMate ).
 
+私が Phrase で使用する一般的な使い方の一つはコードの断片に展開することです.
+例えば cppincs とタイプすれば, 自動的に以下の断片を展開します.
+それは vim であれ gedit であれ有効です.
+(もし vim を主要なエディタとして使用するのであれば, snippetsEmu や snipMate のような vim プラグインをチェックアウトしてください.)
+
 ```
 #include <iostream> 
 #include <string> 
