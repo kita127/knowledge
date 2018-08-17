@@ -342,3 +342,34 @@ b) "Show in Tray meny" : あなたがこれを選択した場合, AutoKey アイ
 
 ### Misc Abbreviation Features
 
+When you click on "Set" near "Abbreviation" you will see lot of options.
+Again, the same description applies to scripts also.
+
+a) Remove typed abbreviation : It is usually checked.
+This means you are actually asking for a text substitution.
+ie "akr" becomes "Auto key rocks !" .
+If you uncheck it, then "akr" becomes "akrAuto Key Rocks !". 
+b) Omit trigger character : Typically the phrase is expanded when you type a space or press enter.
+If you select this option, they will be ignored. 
+c) We already discussed "Match phrase case to typed abbreviation"  and "Ignore case of typed abbreviation" in Example 3. 
+d) "Trigger when typed as part of word" and "Trigger immediately"  : These two work in conjunction.
+If both are checked, the abbreviation is expanded immediately without waiting for space or enter.
+
+
+"Abbreviation" 付近の "Set" をクリックすれば, たくさんのオプションを確認できます.
+また, 同様の内容がスクリプトへも適用できます.
+
+a) Remove typed abbreviation : これはだいたいチェック済です.
+これは実際にテキストの置換を要求するというわけです.(This means ~~ : ~~ という訳だ)
+例えば "akr" は "Auto key rocks !" になります.
+もしチェックしなければ "akr" は "akrAuto Key Rocks !" となります.
+b) "Omit trigger character"(トリガ文字を省略する) : 一般的にフレーズはスペースやエンターが入力された際に展開されます.
+しこのオプションを選んだ場合, それらは無視されます.
+c) "Match phrase case to typed abbreviation" や "Ignore case of typed abbreviation" については例3で説明済みです.
+d) "Trigger when typed as part of word"(単語の一部として入力をトリガ) や "Trigger immediately"(即座にトリガ)
+ : これら2つは連携して働きます.
+ 両方チェック済みであれば, 省略形はスペースやエンターなしに即座に展開されます.
+
+
+
+### AutoKey Usage  : Scripts
