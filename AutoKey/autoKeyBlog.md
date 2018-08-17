@@ -289,7 +289,8 @@ One of the common ways I use Phrase is to expand code snippets.
 For eg when I type cppincs , then I automatically the following snippet.
 It works whether in vim or in gedit.
 (If you use primarily vim, then checkout vim plugins like snippetsEmu or snipMate ).
-`
+
+```
 #include <iostream> 
 #include <string> 
 #include <vector> 
@@ -303,6 +304,6 @@ int main()
 { 
 return 0; 
 }
-`
+```
 
 ### Phrases : Example 7 
