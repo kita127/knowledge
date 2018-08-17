@@ -320,3 +320,25 @@ A simple example is to have a phrase like “username`<tab>`password`<enter>`”
 シンプルな例としては phrase に " username`<tab`password`<enter>`" のような展開を記述することです.
 
 ### Misc Phrases Features
+
+There are some other options in Phrases menu. These features are applicable to scripts also.
+
+a) "Always Prompt before pasting this phrase" – If checked, when you type the abbreviation , you will see a confirm from AutoKey.
+Only when you confirm it will be expanded.
+I doubt , you will ever select it. 
+b) Show in Tray menu : If you select this option, your phrase will be visible when you right click on the AutoKey icon.
+I guess , this will be useful when you dont assign an abbreviation or hotkey for a phrase.
+But again, why will you ever do that ?
+
+その他にも Phrase メニューのいくつかのオプションがあります. これらの機能はスクリプトに対しても適用できます.
+
+a) "Always Prompt before pasting this phrase" - もしチェックした場合, 省略系をタイプすると, AutoKey から確認が促されます.
+そして, あなたが確認した時のみ展開されます.
+しかし, 私はあなたがそれを選択するかは疑わしいです.
+b) "Show in Tray meny" : あなたがこれを選択した場合, AutoKey アイコンを右クリックした時にフレーズが表示されます.
+
+これは省略形やホットキーを phrase に割り当てない場合, 役に立つでしょう.
+が, 度々になりますが, なぜこれを選択するでしょう.
+
+### Misc Abbreviation Features
+
