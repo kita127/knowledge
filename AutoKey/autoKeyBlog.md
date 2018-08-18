@@ -428,3 +428,30 @@ Note that in this case, system was already imported.
 
 #### Scripts : Example 2 
 
+One of my favorite way of using AutoKey is to use it as a way to invoke applications.
+ I am more of a keyboard person and like to do everything without touching the mouse.
+ For eg , when I press "super+c" , Chrome gets started. Lets try it now.
+
+In a new script , press the following code and assign "super+c" as the hotkey.
+ Super is nothing but the windows key on the keyboard.
+ After saving it , when you press "windows(super) + c" , Chrome starts !
+
+AutoKey の使用法として気に入っていることのひとつはアプリケーションの起動の方法として使用することです.
+ 私はとてもキーボード人でありなんでもマウスなしでやりたがります.
+ 例えば, "super+c" でクロームが起動します. 試してみましょう.
+
+新しいスクリプトで以下のコードを入力し "super+c" をホットキーとしてわりあてます.
+ Super とはキーボード上のウィンドウズキーにほかなりません.(nothing but ~~ : ~~ に他ならない)
+
+```
+    import subprocess
+    subprocess.Popen(["/usr/bin/google-chrome"])
+```
+
+You can note that there are two ways of invoking commands.
+ "system" is the old way of invoking it. 
+It works well when you want to wait for the output of the command.
+ "subprocess" is much more flexible.
+ I have used "Popen" which is typically used to start a program and you want to wait for it to end.
+
+#### Scripts : Example 3 
