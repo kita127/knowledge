@@ -371,5 +371,23 @@ d) "Trigger when typed as part of word"(単語の一部として入力をトリ�
  両方チェック済みであれば, 省略形はスペースやエンターなしに即座に展開されます.
 
 
-
 ### AutoKey Usage  : Scripts
+
+Scripts are the coolest feature in AutoKey.
+ AutoKey uses Python as the scripting language for automation.
+ If you don’t know Python, you should really learn it ! AutoKey has an excellent set of API to make your code a breeze.
+ Scripts come into play when you want to do more complex things than simple substitution.
+ Examples include : bringing the current time in the document automatically, adding selected word automatically to Google calendar etc.
+ In fact you can even show some rudimentary GUI to user.
+ Most of the features in scripts are similar to phrase features.
+
+Scripts は Autokey におけるクールな機能です.
+ AutoKey は Python を自動化用のスクリプト言語として使用しています.
+ もし Python を知らなければ, それを学ぶべきです! AutoKey にはコードをたやすく作成するための素晴らしい API 群があります.
+ Scripts はシンプルな置換よりもより複雑なことをする際に有用になります.
+ 例として含まれるのは : ドキュメントに自動的に現在時刻を持ってくるや, Google カレンダーに自動的に選択した単語を追加するなど etc です.
+ 実際にはユーザーに簡単な GUI を表示することさえも可能です.
+ Scripts のほとんどの機能は Phrase の機能と似ています.
+
+
+#### Scripts : Example 1 
