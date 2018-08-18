@@ -391,3 +391,40 @@ Scripts は Autokey におけるクールな機能です.
 
 
 #### Scripts : Example 1 
+
+This example is from AutoKey’s sample scripts page.
+ Lets say you want to bring the current date and time whenever you typed the word "date" in any     application.
+ File -> Create -> New Script (or Ctrl + Shift + n) .
+ You will be see a editor with full Python code highlighting. Enter the following script
+
+この例は AutoKey のスクリプトサンプルページにあります.
+常に "date" と入力すればどのアプリケーションにおいても現在時刻を取得したいとしましょう.
+ File -> Create -> New Script (もしくは Ctrl + Shift + n) .
+完全に Python のシンタックスハイライトに対応したエディタが立ち上がります.
+そして以下のスクリプトを入力してください.
+
+```
+    output = system.exec_command("date")
+    keyboard.send_keys(output)
+```
+
+The screen should look like this : <br>
+[image]<br>
+
+スクリーン上はこんな感じになるはずです.
+[画像]
+
+Note that in this case, system was already imported.
+ If you want to use some other package, you might want to import it first.
+ Give "date" as the abbreviation.
+ Save the script and type "date" in any application and watch it magically become current time (Eg Wed Apr 14 21:14:27 CDT 2010 ) .
+ Of course, you can have a hotkey assigned for the script too !
+
+注意すべきはこの場合は, システムをすでにインポート済みであるということです.
+ もし他にパッケージを必要とする場合は, 先にインポートすることをオススメします.( might want to ~~ : ~~ してはいかがでしょうか)
+ "date" という単語を省略形として与えます.
+ スクリプトを記録し "date" という単語を任意のアプリケーションで入力してみてくださいそして魔法のように現在時刻が得られることを確認してください.
+ もちろん, ホットキーをスクリプトに割り当てることも可能です !
+
+#### Scripts : Example 2 
+
