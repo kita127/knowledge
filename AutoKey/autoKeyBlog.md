@@ -412,7 +412,7 @@ The screen should look like this : <br>
 [image]<br>
 
 スクリーン上はこんな感じになるはずです.
-[画像]
+[画像]<br>
 
 Note that in this case, system was already imported.
  If you want to use some other package, you might want to import it first.
