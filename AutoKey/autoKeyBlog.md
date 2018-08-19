@@ -479,5 +479,29 @@ Alternatively, you might want to use AutoKey to open some folders or files based
 
 #### Scripts : Example 4 
 
+There are lot of interesting ways to use the full power of Python.
+ Some clever usage can be seen at [[Favorite scripts 1]] ,  and [[Favorite scripts 2]] .
 
+Python の機能をフルに活用した興味深いやり方がたくさんあります.
+ [[Favorite scripts 1]] や [[Favorite scripts 2]] のようないくつかの便利な利用法が見れます.
+
+#### Scripts : Example 5
+AutoKey has a powerful API to control windows, clipboard, mouse etc.
+ For eg, you make a particular window come to foreground (see window.activate) , get the selected text, get contents of clipboard, add a text to clipboard etc.
+ You can check the [[AutoKey API reference]].  You can also check out some [[sample scripts]] .
+
+Another neat feature is to provide a lib folder and AutoKey will import all files in that folder.
+ I have not tried this feature, but I think it should work.
+ To get that Edit -> Preferences -> Script Engine.
+
+AutoKey は強力な API を持っています, ウィンドウやクリップボードやマウスなどを操作するための.
+ 例えば, ウィンドウの一部を全面に持ってくるや(window.active を確認), 選択したテキストの取得や, クリップボードの中身を取得や, テキストをクリップボードに追加など.
+ [[AutoKey API reference]] をチェックしてみるとよいでしょう. [[sample scripts]] をチェックしてみるのもよいでしょう.
+
+その他の巧妙な機能は lib フォルダを提供しそこからすべてのファイルをインポートすることです.
+
+ 私はまだこの機能を試していませんが, 機能するはずです.
+ 使用するには Edit -> Preferences -> Script Engine を押下してください.
+
+### Folders
 
