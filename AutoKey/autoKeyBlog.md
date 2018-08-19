@@ -454,4 +454,30 @@ It works well when you want to wait for the output of the command.
  "subprocess" is much more flexible.
  I have used "Popen" which is typically used to start a program and you want to wait for it to end.
 
+コマンドの呼び出しには2つの方法があることに注意してください.
+ "system" は古くからある呼び出し方法です.
+ それはコマンドのoutputが出力されるまで待機したい場合に使えます.
+ "subprocess" はより柔軟です.
+ 私は決まってプログラムを開始するため "Popen" を使用していますそしてあなたはそれが終わるのを待ちます.
 #### Scripts : Example 3 
+
+Alternatively, you might want to use AutoKey to open some folders or files based on a hotkey.
+ Eg open your "Ubuntu One" folder with a hotkey or open some excel sheet.
+ A generic way (Obtained from the discussion [[here]] ) is given below.
+ xdg-open intelligently, opens the file/folder using the appropriate viewer/program.
+
+あるいは, AutoKey を使用しホットキーによりフォルダやファイルをオープンしてはいかがでしょうか.
+ 例えば "Ubuntu One" フォルダをホットキーにより開いたりもしくは excel シートを開くなど.
+ 標準的なやり方([[here]]ここの説明で得られた)は以下に示すとおりです.
+ xdg-open は利口に対象のファイルやフォルダの専用である viewer や program を使用してオープンしてくれます.
+
+
+```
+    import subprocess
+    subprocess.call([‘xdg-open’, ‘PATH_TO_FILE_OR_DIR’])
+```
+
+#### Scripts : Example 4 
+
+
+
