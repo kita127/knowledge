@@ -505,3 +505,17 @@ AutoKey は強力な API を持っています, ウィンドウやクリップ�
 
 ### Folders
 
+AutoKey uses folders to organize the phrases and scripts.
+ You can either create a new top level folder or some nested folders.
+ This concept is quite easy to use.
+ I group the phrases and scripts based on their functionality and intent.
+ You can use any organization that works for you.
+
+AutoKey はフレーズやスクリプトを体系づけるためフォルダを使用します.
+ 新しいトップレベルのフォルダあるいはいくつかのネストされたフォルダのどちらでもを作成することができます.
+ このコンセプトは非常に使いやすいです.
+ フレーズやスクリプトをそれらの機能や使用目的に応じてグループ分けできます.
+ 目的ごとに組織化された塊ごとに使用することができます.
+
+
+### Trays
