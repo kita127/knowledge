@@ -517,5 +517,82 @@ AutoKey はフレーズやスクリプトを体系づけるためフォルダを
  フレーズやスクリプトをそれらの機能や使用目的に応じてグループ分けできます.
  目的ごとに組織化された塊ごとに使用することができます.
 
-
 ### Trays
+
+The concept of tray is another useful feature – Although, I rarely use it.
+ There are two ways to add a phrase or script to the tray.
+ First is to add the phrase/script within the "Tray Phrases" folder.
+ Other way is to check the checkbox "Show in tray menu" (for both phrase and script).
+ In both the scenarios, when you right click on the AutoKey icon, you will see them.
+ My guess is that this will be useful if you did not set a hotkey or abbreviation.
+
+
+tray のコンセプトはその他の有用な機能です - しかしながら, 私はほとんど使用していません.
+ tray にフレーズやスクリプトを加える方法は2通りあります.
+ ひとつ目は "Tray phrases" フォルダ内に フレーズ/スクリプトを加えるやりかた.
+ もうひとつの方法は "Show in tray meny" チェックボックスにチェックをつけます(フレーズとスクリプトの両方).
+ この2つのシナリオは両方とも AutoKey のアイコンを右クリックすれば表示されます.
+ 私の推測ではこれはホットキーあるいは省略形を設定しないときに有用となると考えています.
+
+### Preferences
+
+AutoKey has a intuitive preferences menu. Common things to do are :<br>
+a) Enable "Prompt for unsaved changes" checkbox in "General" tab.
+ If unchecked, the phrase/script changes are automatically saved.<br>
+b) Also check "Enable undo by pressing backspace".
+ This means when you want to type a text which is a abbreviation (eg akr) without getting expanded, then you type the string,let it expand and press the backspace immediately.
+ It will give the abbreviation without the expansion.<br>
+c) Another thing to change is default hotkey to get AutoKey’s config window.
+ It is usually ctrl+k which interferes with Firefox’s search button.<br>
+d) Check out other options and enable as you feel fit.<br>
+
+
+AutoKey には直感的な優先メニューがあります. 一般的にやることは(things to do : やること) :<br>
+a) "一般" タブにある"セーブしていない変更に対してプロンプトを表示" チェックボックスを有効.
+ もしチェックしていなければフレーズやスクリプトの変更が自動的にセーブされます.<br>
+b) また"backspace で undo を有効" にチェック.
+ これは展開なしに省略形(例えば akr)のテキストを入力したい場合, 文字列を入力し, それが展開されたら即座に backspace を入力することにより実現できることを意味しています.<br>
+c) その他の変更に関する事柄は AutoKey のコンフィグウィンドウへのデフォルトのホットキーです.
+ FireFox の検索ボタンを妨げるのは ctrl+k です.<br>
+d) その他のオプションを調べそしてあなたの感覚にフィットするよう設定しましょう.
+
+
+### Miscellaneous Stuff
+
+1. Autokey works by catching you keystrokes and doing the expansion or script execution.
+ This has many implications which you will notice when you use AutoKey a lot.
+ For eg when you copy paste a text with an abbreviation , it will not expand as you did not "type" it.
+ Similarly you can cause a abbreviation to be not expanded if you use your left/right keys.
+ Of course, using backspace within an abbreviation still results in proper expansion.
+
+2. Previous versions of AutoKey had a nifty hotkey called cursor which will place the cursor at that position.
+ It is not supported. For  a workaround , see this Ubuntu forums thread.
+ To give it here ,
+
+    firstPart = "First part of the text. Cursor ->"
+    secondPart = "<- second part"
+    keyboard.send_keys(firstPart + secondPart)
+    keyboard.send_key("<left>", len(secondPart))
+
+3. If you want to see all the AutoKey topics and responses , check out their mailing list topics.
+4. AutoKey now uses a json file for configuration.
+ It is located at ~/.config/AutoKey/AutoKey.json.
+ Enjoy playing with it ! This also means that if you want to use the same settings across users , just create a symlink to the same file.
+ If you want to share across multiple machines use Dropbox or Ubuntu One.
+ For more details, check this AutoKey thread.
+
+5. If you face any issues when using it, follow the instructions at the Troubleshooting page before shooting a mail.
+ That said, I have to say that AutoKey mailing list is very active and helpful !
+
+6. This is a post from LifeHacker on snippits , another tool similar to AutoKey.
+ I would not recommend it (as I had  a hard time even installing it).
+ But the point is , you should be able to use most of the things done in the video and more using AutoKey.
+ Use that video as an exercise for testing your AutoKey skills 🙂
+
+7. There is another project called IronAHK that is going on which brings AHK to Linux.
+ It is not yet ready for prime time.
+ If you are a AutoHotKey user , may be you will find it useful.
+
+### Good Discussions In AutoKey’s Mailing List
+
+
