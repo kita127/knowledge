@@ -565,19 +565,19 @@ d) その他のオプションを調べそしてあなたの感覚にフィッ�
  Similarly you can cause a abbreviation to be not expanded if you use your left/right keys.
  Of course, using backspace within an abbreviation still results in proper expansion.
 
-AutoKey はあなたのキー入力を受け取って仕事をしたりテキストを展開したり, スクリプトを実行します.
-あなたが AutoKey をたくさん使用することにより気づくであろうたくさんの実装を持っています.
-例えば省略形をコピー＆ペーストした時にはタイプしていないので展開されません.
-似たようなことでは, left/right キーを使用したときにも省略形は展開されません.
-もちろん, 省略形の範囲内でバックスペースを使用しても結果は的確な展開となります.
+ AutoKey はあなたのキー入力を受け取って仕事をしたりテキストを展開したり, スクリプトを実行します.
+ あなたが AutoKey をたくさん使用することにより気づくであろうたくさんの実装を持っています.
+ 例えば省略形をコピー＆ペーストした時にはタイプしていないので展開されません.
+ 似たようなことでは, left/right キーを使用したときにも省略形は展開されません.
+ もちろん, 省略形の範囲内でバックスペースを使用しても結果は的確な展開となります.
 
 2. Previous versions of AutoKey had a nifty hotkey called cursor which will place the cursor at that position.
  It is not supported. For  a workaround , see this Ubuntu forums thread.
  To give it here ,
 
-以前の AutoKey のバージョンにはカーソルをその位置におけるカーソルと呼ばれる粋なホットキーがありました.
-今はサポートされていません.応急処置としては, Ubuntu forums thread をご確認ください.
-それを与えるためには...
+ 以前の AutoKey のバージョンにはカーソルをその位置におけるカーソルと呼ばれる粋なホットキーがありました.
+ 今はサポートされていません.応急処置としては, Ubuntu forums thread をご確認ください.
+ それを与えるためには...
 
     firstPart = "First part of the text. Cursor ->"
     secondPart = "<- second part"
@@ -585,7 +585,9 @@ AutoKey はあなたのキー入力を受け取って仕事をしたりテキス
     keyboard.send_key("<left>", len(secondPart))
 
 3. If you want to see all the AutoKey topics and responses , check out their mailing list topics.
-もし AutoKey の全てのトピックや回答を確認したければ, メーリングリストのトピックを確認してください.
+
+
+ もし AutoKey の全てのトピックや回答を確認したければ, メーリングリストのトピックを確認してください.
 
 
 4. AutoKey now uses a json file for configuration.
@@ -594,17 +596,17 @@ AutoKey はあなたのキー入力を受け取って仕事をしたりテキス
  If you want to share across multiple machines use Dropbox or Ubuntu One.
  For more details, check this AutoKey thread.
 
-AutoKey は現在設定用に json ファイルを使用しています.
-それは ~/.config/AutoKey/AutoKey.json に配置されています.
-是非ご活用ください! これはもしあなたがユーザーをまたいで設定を使用したい場合は同じファイルへのシンボリックリンクを作成すればよいということを意味しています.
-もし複数のマシンで共有したければ Dropbox か Ubuntu One を使用します.
-詳細は, AutoKey thread をご確認ください.
+ AutoKey は現在設定用に json ファイルを使用しています.
+ それは ~/.config/AutoKey/AutoKey.json に配置されています.
+ 是非ご活用ください! これはもしあなたがユーザーをまたいで設定を使用したい場合は同じファイルへのシンボリックリンクを作成すればよいということを意味しています.
+ もし複数のマシンで共有したければ Dropbox か Ubuntu One を使用します.
+ 詳細は, AutoKey thread をご確認ください.
 
 5. If you face any issues when using it, follow the instructions at the Troubleshooting page before shooting a mail.
  That said, I have to say that AutoKey mailing list is very active and helpful !
 
-もし使用している時に何かしらの問題に直面したときは, メールを出す前にトラブルシューティングページの指示に従ってみてください.
- AutoKey のメーリングリストはとても活発で助けになると言うことをお伝えしなければなりません.
+ もし使用している時に何かしらの問題に直面したときは, メールを出す前にトラブルシューティングページの指示に従ってみてください.
+  AutoKey のメーリングリストはとても活発で助けになると言うことをお伝えしなければなりません.
 
 6. This is a post from LifeHacker on snippits , another tool similar to AutoKey.
  I would not recommend it (as I had  a hard time even installing it).
