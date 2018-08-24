@@ -565,7 +565,7 @@ d) その他のオプションを調べそしてあなたの感覚にフィッ�
  Similarly you can cause a abbreviation to be not expanded if you use your left/right keys.
  Of course, using backspace within an abbreviation still results in proper expansion.
 
-1. AutoKey はあなたのキー入力を受け取って仕事をしたりテキストを展開したり, スクリプトを実行します.
+AutoKey はあなたのキー入力を受け取って仕事をしたりテキストを展開したり, スクリプトを実行します.
 あなたが AutoKey をたくさん使用することにより気づくであろうたくさんの実装を持っています.
 例えば省略形をコピー＆ペーストした時にはタイプしていないので展開されません.
 似たようなことでは, left/right キーを使用したときにも省略形は展開されません.
@@ -575,7 +575,7 @@ d) その他のオプションを調べそしてあなたの感覚にフィッ�
  It is not supported. For  a workaround , see this Ubuntu forums thread.
  To give it here ,
 
-2. 以前の AutoKey のバージョンにはカーソルをその位置におけるカーソルと呼ばれる粋なホットキーがありました.
+以前の AutoKey のバージョンにはカーソルをその位置におけるカーソルと呼ばれる粋なホットキーがありました.
 今はサポートされていません.応急処置としては, Ubuntu forums thread をご確認ください.
 それを与えるためには...
 
@@ -585,7 +585,7 @@ d) その他のオプションを調べそしてあなたの感覚にフィッ�
     keyboard.send_key("<left>", len(secondPart))
 
 3. If you want to see all the AutoKey topics and responses , check out their mailing list topics.
-3. もし AutoKey の全てのトピックや回答を確認したければ, メーリングリストのトピックを確認してください.
+もし AutoKey の全てのトピックや回答を確認したければ, メーリングリストのトピックを確認してください.
 
 
 4. AutoKey now uses a json file for configuration.
@@ -594,7 +594,7 @@ d) その他のオプションを調べそしてあなたの感覚にフィッ�
  If you want to share across multiple machines use Dropbox or Ubuntu One.
  For more details, check this AutoKey thread.
 
-4. AutoKey は現在設定用に json ファイルを使用しています.
+AutoKey は現在設定用に json ファイルを使用しています.
 それは ~/.config/AutoKey/AutoKey.json に配置されています.
 是非ご活用ください! これはもしあなたがユーザーをまたいで設定を使用したい場合は同じファイルへのシンボリックリンクを作成すればよいということを意味しています.
 もし複数のマシンで共有したければ Dropbox か Ubuntu One を使用します.
@@ -603,7 +603,7 @@ d) その他のオプションを調べそしてあなたの感覚にフィッ�
 5. If you face any issues when using it, follow the instructions at the Troubleshooting page before shooting a mail.
  That said, I have to say that AutoKey mailing list is very active and helpful !
 
-5. もし使用している時に何かしらの問題に直面したときは, メールを出す前にトラブルシューティングページの指示に従ってみてください.
+もし使用している時に何かしらの問題に直面したときは, メールを出す前にトラブルシューティングページの指示に従ってみてください.
  AutoKey のメーリングリストはとても活発で助けになると言うことをお伝えしなければなりません.
 
 6. This is a post from LifeHacker on snippits , another tool similar to AutoKey.
