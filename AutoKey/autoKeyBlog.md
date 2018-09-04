@@ -613,9 +613,20 @@ d) その他のオプションを調べそしてあなたの感覚にフィッ�
  But the point is , you should be able to use most of the things done in the video and more using AutoKey.
  Use that video as an exercise for testing your AutoKey skills 🙂
 
+
+ これは LifeHacher のスニペットからの記事で, AutoKey に似た別のツールになります.
+ 私はあまりオススメしません(インストールするのに非常に苦労しました).
+ しかしながら大切なのは, このビデオで行われる大抵のことは AutoKey でもできるはずです.
+ 自身の AutoKey スキルをテストするエクササイズとしてそのビデオを活用してみてください🙂
+
+
 7. There is another project called IronAHK that is going on which brings AHK to Linux.
  It is not yet ready for prime time.
  If you are a AutoHotKey user , may be you will find it useful.
+
+ Linux に AHK を持ってこようとしている IronAHK と呼ばれる別のプロジェクトがあります.
+ これはまだ本格使用としての準備が整っていません.
+ もしあなたが AutoHotKey の使用者なら, 便利さを見いだせるかもしれません.
 
 ### Good Discussions In AutoKey’s Mailing List
 
