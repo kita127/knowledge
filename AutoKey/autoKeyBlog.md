@@ -636,19 +636,19 @@ I notice that AutoKey’s mailing list occasionally bring up some creative way o
 私は AutoKey のメーリングリストが時には AutoKey を使用した独創的なやり方を発見することに気づきました.
  私は AutoKey の新たな側面を発見する論議のカタログ化のライブとしてこのセクションを保存たいと思います.
 
-1. Can I exclude windows in Window Filter?
- Window フィルターのウィンドウを除外できますか?
+1. Can I exclude windows in Window Filter?<br>
+ Window フィルターのウィンドウを除外できますか?<br>
 
 Yes. See here .
 
 
-2. How to get a script to invoke an abbreviation ?
- 省略形を起動するためのスクリプトはどのようにてにいれますか?
+2. How to get a script to invoke an abbreviation ?<br>
+ 省略形を起動するためのスクリプトはどのようにてにいれますか?<br>
 
 See here .
 
-3. Restrictions in using modules in AutoKey scripts :
- AutoKey スクリプトでモジュールを使用する際の注意事項
+3. Restrictions in using modules in AutoKey scripts :<br>
+ AutoKey スクリプトでモジュールを使用する際の注意事項<br>
 
 See here and here.
 
