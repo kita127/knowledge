@@ -630,4 +630,50 @@ d) その他のオプションを調べそしてあなたの感覚にフィッ�
 
 ### Good Discussions In AutoKey’s Mailing List
 
+I notice that AutoKey’s mailing list occasionally bring up some creative way of using AutoKey.
+ I hope to keep this section as a live one which catalogs the discussions that bring out a new facet of AutoKey. . 
 
+私は AutoKey のメーリングリストが時には AutoKey を使用した独創的なやり方を発見することに気づきました.
+ 私は AutoKey の新たな側面を発見する論議のカタログ化のライブとしてこのセクションを保存たいと思います.
+
+1. Can I exclude windows in Window Filter?
+ Window フィルターのウィンドウを除外できますか?
+
+Yes. See here .
+
+
+2. How to get a script to invoke an abbreviation ?
+ 省略形を起動するためのスクリプトはどのようにてにいれますか?
+
+See here .
+
+3. Restrictions in using modules in AutoKey scripts :
+ AutoKey スクリプトでモジュールを使用する際の注意事項
+
+See here and here.
+
+### Acknowledgements(礼文)
+
+I have liberally used resources from AutoKey’s wiki pages and its mailing list.
+ I learned lot of very interesting points from AutoKey’s mailing list.
+ I have linked to some of them and given the essential point of the thread in some places.
+ If you are using AutoKey , then you must join the list. It is a very helpful and active list.
+
+私は大いに AutoKey のウィキページやメーリングリストの資源を使用してきました.
+ 私は AutoKey のメーリングリストからとてもたくさんの興味深いことを学びました.
+ 私はそれらをリンクしいくつかの場所の重要で本質的なスレッドを与えました.
+ もし AutoKey を使用するなら, リストに加わることです. とても活発で手助けとなるリストです.
+
+In conclusion , AutoKey is a very neat utility .
+ Clever use of it will tremendously improve your productivity.
+ I hope this post helped to use it better ! Have fun with AutoKey !
+
+ 結論としては, AutoKey はとても素敵なユーティリティです.
+ 賢く使用することでとてつもなく生産性を向上させるでしょう.
+ この記事が AutoKey をより良く使う助けとなることを願っています! AutoKey を楽しみましょう!
+
+Update [04-15-2010]: Corrected a mistake  pointed out by Chris.
+ If “Prompt for unsaved changes” checkbox is unchecked, changes are saved automatically.
+ You don’t lose the changes as I wrote.
+
+If you liked this post , please subscribe to the RSS feed.
