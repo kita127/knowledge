@@ -676,4 +676,11 @@ Update [04-15-2010]: Corrected a mistake  pointed out by Chris.
  If “Prompt for unsaved changes” checkbox is unchecked, changes are saved automatically.
  You don’t lose the changes as I wrote.
 
+更新 [04-15-2010]: Chris からの指摘のあった誤りを修正.
+ もし "Prompt for unsaved changes"(セーブしていない変更に対してプロンプトを表示) のチェックボックスが
+ チェックされていない場合, 変更は自動的に保存されます.
+ 私が書いたように変更が失われることはありません.
+
 If you liked this post , please subscribe to the RSS feed.
+
+もしこの記事が気に入りましたら, RSSフィードにサインをお願いします.
