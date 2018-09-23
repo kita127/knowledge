@@ -58,6 +58,12 @@ git diff HEAD HEAD~ (previous previous HEAD~~)
 ### View logs of all branches
 git log --all
 
+### 特定のリビジョンのコミットを打ち消し歴史に刻む
+git revert `消したいハッシュなど`
+
+### branch の削除
+git branch --delete `消したいブランチ`
+
 ## git コンフィグ
 以下.gitconfigファイルに設定する内容
 
