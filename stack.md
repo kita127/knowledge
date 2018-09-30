@@ -33,12 +33,16 @@ export PATH<br>
 ### プロジェクトをフル・クリーン(.stack-workもまるごと消す)
 stack clean --full
 
-## ライブラリ
+## hoogle(ライブラリ)
 ### グローバルデータベースの作成
 stack exec -- hoogle generate
 
-#### プロジェクトデータベースの作成
+### プロジェクトデータベースの作成
 stack hoogle
+
+### e.g.
+stack hoogle "map"    -- キーワード検索<br>
+stack hoogle "con map"  --  一部覚えているキーワードで検索(concatMap を探したいの例)<br>
 
 ## コマンド
 ### stack setup
@@ -49,6 +53,7 @@ Ver 1.6.以降はstack buildした際にインストールされるそうなの�
 初回実行時はグローバルプロジェクトフォルダ$HOME/.stackに作成する<br>
 ### stack upgrade
 stackバージョンをlatestのものに更新
+
 
 ## GHCi
 ### ghcオプションを設定する
