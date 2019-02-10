@@ -1,12 +1,11 @@
 # Why Haskell matters
 なぜHaskellなのか
 
-# 出典
+## 出典
 https://wiki.haskell.org/Why\_Haskell\_matters
 
 ### 2.5 Haskell and bugs
 
-```
 We have several times stated that various features of Haskell help fight the occurrence of bugs. Let's recap these.
  Haskell programs have fewer bugs because Haskell is:
 
@@ -58,8 +57,6 @@ Furthermore most people agree that you just think differently when solving probl
 その上, 多くの人は異なるものだと同意します, 関数型言語で問題を解決する時は.
  問題をより小さな関数に分解しそして最終的な結果を得るための様々な方法で構成された小さな関数(そしてほぼ確実に正しい)を書きます.
  バグの入り込む余地はありません.
-
-```
 
 
 

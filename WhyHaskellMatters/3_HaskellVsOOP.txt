@@ -1,14 +1,12 @@
 # Why Haskell matters
 なぜHaskellなのか
 
-# 出典
+## 出典
 https://wiki.haskell.org/Why\_Haskell\_matters
-
 
 
 ### 3 Haskell vs OOP
 
-```
 The great benefit of Object Oriented Programming is rarely that you group your data with the functions that act upon it together into an object
  - it's that it allows for great data encapsulation (separating the interface from implementation) and polymorphism (letting a whole set of data types behave the same way).
  However:
@@ -97,4 +95,3 @@ So to summarize: Haskell does include mechanisms for data encapsulation that mat
  これは, しかしながら, とてもマイナーな問題です. 関数をオブジェクトに適用するには "obj.func a b c" と書くかわりに "func obj a b c" と書きます.
 
 
-```
