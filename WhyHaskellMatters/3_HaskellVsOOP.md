@@ -88,10 +88,13 @@ Polymorphism is done by using something called type classes. Now,
  Haskell はどの関数を使用しているかを見て自動的に推論するでしょう(qsort の例で言えば, "<" や ">=" が関連します)
 
 
-
 So to summarize: Haskell does include mechanisms for data encapsulation that match or surpass those of OOP languages.
- The only thing Haskell does not provide is a way to group functions and data together into a single "object" (aside from creating a data type which includes a function - remember,
- functions are data!). This is, however, a very minor problem. To apply a function to an object you would write "func obj a b c" instead of something like "obj.func a b c". 
+ The only thing Haskell does not provide is a way to group functions and data together into a single "object" (aside from creating a data type which includes a function - remember, functions are data!).
+ This is, however, a very minor problem. To apply a function to an object you would write "func obj a b c" instead of something like "obj.func a b c". 
+
+そして要約すると: Haskell オブジェクト指向言語と同等かそれをしのぐデータカプセル化のメカニズムを含んでいます.
+ Haskell が提供しない唯一のことは関数とデータをひとつの "object" にグループ化する方法です(データの生成には関数も含まれるということは置いておいて - 思い出してください, 関数はデータです!).
+ これは, しかしながら, とてもマイナーな問題です. 関数をオブジェクトに適用するには "obj.func a b c" と書くかわりに "func obj a b c" と書きます.
 
 
 ```
