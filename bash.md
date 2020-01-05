@@ -22,3 +22,8 @@ du -s
 
 ### zip 解凍
 unzip `<file>`
+
+
+* コマンドの履歴
+
+    Ctrl+r
