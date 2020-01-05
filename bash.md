@@ -1,28 +1,36 @@
 # bash
 
-## bash command
+## コマンド
 
-### 前にいたディレクトリへバック
-cd -
+* 前にいたディレクトリへバック
 
-### カレントディレクトリのパスをクリップボードにコピー
-pwd | pbcopy
+    cd -
 
-### pbcopyのでディレクトリ移動
-cd `pbpaste`
+* カレントディレクトリのパスをクリップボードにコピー
 
-### 実行時間計測
-time コマンド
+    pwd | pbcopy
 
-### search installed package
-dpkg -l
+* pbcopyのでディレクトリ移動
 
-### check directory capacity
-du -s
+    cd \`pbpaste\`
 
-### zip 解凍
-unzip `<file>`
+* 実行時間計測
 
+    time コマンド
+
+* インストールしたパッケージの検索
+
+    dpkg -l
+
+* check directory capacity
+
+    du -s
+
+* zip 解凍
+
+    unzip <file>
+
+## ショートカットキー
 
 * コマンドの履歴
 
